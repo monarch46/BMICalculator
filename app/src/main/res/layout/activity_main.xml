@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/hlabel"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Your Height:"
+            android:textSize="30dp"
+            />
+
+        <EditText
+            android:id="@+id/htext"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/hlabel"
+            />
+
+        <TextView
+            android:id="@+id/centimeter"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="(Centimeters)"
+            android:layout_below="@id/htext"
+            android:layout_toRightOf="@id/hlabel"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/wlabel"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Your Weight:"
+            android:layout_below="@id/centimeter"
+            android:textSize="30dp"
+            />
+
+        <EditText
+            android:id="@+id/wtext"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/wlabel"
+            android:layout_below="@id/centimeter"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/kilogram"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="(Kilogram)"
+            android:layout_below="@id/wtext"
+            android:layout_toRightOf="@id/wlabel"
+            />
+
+        <Button
+            android:id="@+id/buttona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/kilogram"
+            android:text="Compute BMI"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerInParent="true"
+            android:text="Your BMI"
+            />
+
+        <EditText
+            android:id="@+id/result"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/bmi"
+            android:layout_centerHorizontal="true"
+            android:editable="false"
+            android:maxLength="4"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+</LinearLayout>
